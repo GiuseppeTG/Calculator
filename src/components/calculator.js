@@ -2,6 +2,7 @@
 /* eslint-disable react/prefer-stateless-function */
 
 import React from 'react';
+import calculate from '../logic/calculate';
 
 const buttonsRows = [
   ['AC', '+/-', '%', '÷'],
@@ -10,7 +11,13 @@ const buttonsRows = [
   ['1', '2', '3', '+'],
   ['0', '.', '='],
 ];
+
 export default class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
     return (
       <div className="calculator-grid">
@@ -25,6 +32,7 @@ export default class Calculator extends React.Component {
                       className={`calc-btn 
                       ${buttonName === '0' ? 'span-two' : ''} 
                       ${index === buttonsRow.length - 1 ? 'operator' : ''}`}
+
                     >
                       { buttonName }
                     </button>
