@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .calculator-grid {
@@ -13,8 +14,9 @@ body {
   margin: auto;
   display: grid;
   margin-top: 100px;
-  grid-template-columns: repeat(4, 100px);
+  grid-template-columns: repeat(4, 70px);
   grid-template-rows: minmax(40px, auto) repeat(5, 40px);
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.63);
 }
 
 .span-two {
@@ -23,6 +25,7 @@ body {
 
 .output {
   background-color: rgb(65, 65, 65);
+  display: flex;
   color: white;
   padding: 0 20px;
   grid-column: 1 / -1;
@@ -30,13 +33,27 @@ body {
   align-items: center;
   flex-direction: row-reverse;
   outline: rgb(119, 119, 119) solid 1px;
+  height: 60px;
+  font-size: 20px;
 }
 
 .calc-btn {
   border: none;
   outline: rgb(119, 119, 119) solid 1px;
+  font-size: 14px;
 }
 
 .operator {
   background-color: orange;
+  font-size: 18px;
 }
+
+.calc-btn:hover {
+  background-color: rgb(250, 215, 215);
+}
+
+.operator:hover {
+  background-color: rgb(255, 205, 111);
+}
+
+
