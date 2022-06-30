@@ -1,10 +1,5 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable react/prefer-stateless-function */
-
 import React, { Fragment } from 'react';
 import calculate from '../logic/calculate';
-
-// import calculate from '../logic/calculate';
 
 const buttonsRows = [
   ['AC', '+/-', '%', '÷'],
@@ -46,6 +41,7 @@ export default class Calculator extends React.Component {
                   buttonsRow.map((buttonName, index) => (
                     <button
                       onClick={() => { this.handleCalculation(buttonName); }}
+                      type="button"
                       key={buttonName}
                       className={`calc-btn 
                       ${buttonName === '0' ? 'span-two' : ''} 

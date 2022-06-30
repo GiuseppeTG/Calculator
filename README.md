@@ -21,17 +21,19 @@
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
-### Setup
+code editor and browser
 
 ### Install
+`npm i`
 
 ### Usage
+use the calculator by clicking on its buttons.
 
 ### Run tests
+`npm test`
 
 ### Deployment
-
+`npm start`
 
 
 ## Authors
