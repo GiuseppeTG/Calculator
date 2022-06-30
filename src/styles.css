@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.calculator-grid {
+  width: fit-content;
+  margin: auto;
+  display: grid;
+  margin-top: 100px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(40px, auto) repeat(5, 40px);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  background-color: rgb(65, 65, 65);
+  color: white;
+  padding: 0 20px;
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  outline: rgb(119, 119, 119) solid 1px;
+}
+
+.calc-btn {
+  border: none;
+  outline: rgb(119, 119, 119) solid 1px;
+}
+
+.operator {
+  background-color: orange;
+}
