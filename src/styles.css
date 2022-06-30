@@ -29,7 +29,6 @@ body {
   color: white;
   padding: 0 20px;
   grid-column: 1 / -1;
-  display: flex;
   align-items: center;
   flex-direction: row-reverse;
   outline: rgb(119, 119, 119) solid 1px;
@@ -55,5 +54,3 @@ body {
 .operator:hover {
   background-color: rgb(255, 205, 111);
 }
-
-
