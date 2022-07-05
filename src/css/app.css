@@ -5,15 +5,13 @@
 }
 
 main {
-  border: yellow solid 2px;
   display: block;
 }
 
 .container {
-  border: red solid 2px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin: 4rem 0;
+  height: 100vh;
 }

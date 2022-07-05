@@ -2,6 +2,6 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <div className="footer">Footer</div>
+    <div className="footer">This webpage was made by Giuseppe Tomasini</div>
   );
 }

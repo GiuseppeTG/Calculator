@@ -15,7 +15,7 @@ const defaultCalculatorData = {
   operation: null,
 };
 
-const Calculator = () => {
+export default function Calculator() {
   const [calculatorData, setCalculatorData] = useState(defaultCalculatorData);
   const { total, next, operation } = calculatorData;
 
@@ -59,6 +59,4 @@ const Calculator = () => {
       </div>
     </div>
   );
-};
-
-export default Calculator;
+}
