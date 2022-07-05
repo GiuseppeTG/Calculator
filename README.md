@@ -11,14 +11,9 @@
 - Frameworks: React, Jest
 - Technologies used: VSC, git, GitHub, Chrome, Webpack
 
-## Live Demo
-
-[Live Demo Link](https://giuseppetg.github.io/Calculator/public)
-
-
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running, follow these simple example steps.
 
 ### Prerequisites
 code editor and browser
