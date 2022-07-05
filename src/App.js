@@ -6,8 +6,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-// eslint-disable-next-line import/extensions
-import Calculator from './components/Calculator.js';
+import Calculator from './components/calculator';
 
 const App = () => (
   <Router>
