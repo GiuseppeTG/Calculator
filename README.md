@@ -11,7 +11,7 @@
 - Frameworks: React, Jest
 - Technologies used: VSC, git, GitHub, Chrome, Webpack
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://giuseppetg.github.io/Calculator/public)
 
