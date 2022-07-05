@@ -2,11 +2,11 @@ import React from 'react';
 import {
   BrowserRouter as Router, Routes, Route,
 } from 'react-router-dom';
-import Calculator from './components/Calculator.js';
-import Home from './components/Home.js';
-import About from './components/About.js';
-import Navbar from './components/Navbar.js';
-import Footer from './components/Footer.js';
+import Home from './components/Home';
+import About from './components/About';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Calculator from './components/Calculator';
 
 const App = () => (
   <Router>
