@@ -32,28 +32,31 @@ const Calculator = () => {
   };
 
   return (
-    <div className="calculator-grid">
-      <div className="output">{isStateNull() ? '0' : displayCalculation()}</div>
-      {
-          buttonsRows.map((buttonsRow, rowIndex) => (
-            <Fragment key={`row ${rowIndex + 1}`}>
-              {
-                  buttonsRow.map((buttonName, index) => (
-                    <button
-                      onClick={() => { handleCalculation(buttonName); }}
-                      type="button"
-                      key={buttonName}
-                      className={`calc-btn 
-                                ${buttonName === '0' ? 'span-two' : ''} 
-                                ${index === buttonsRow.length - 1 ? 'operator' : ''}`}
-                    >
-                      { buttonName }
-                    </button>
-                  ))
-                }
-            </Fragment>
-          ))
-        }
+    <div className="calculator-section">
+      <h2>Let&apos;s do some Math</h2>
+      <div className="calculator-grid">
+        <div className="output">{isStateNull() ? '0' : displayCalculation()}</div>
+        {
+            buttonsRows.map((buttonsRow, rowIndex) => (
+              <Fragment key={`row ${rowIndex + 1}`}>
+                {
+                    buttonsRow.map((buttonName, index) => (
+                      <button
+                        onClick={() => { handleCalculation(buttonName); }}
+                        type="button"
+                        key={buttonName}
+                        className={`calc-btn 
+                                  ${buttonName === '0' ? 'span-two' : ''} 
+                                  ${index === buttonsRow.length - 1 ? 'operator' : ''}`}
+                      >
+                        { buttonName }
+                      </button>
+                    ))
+                  }
+              </Fragment>
+            ))
+          }
+      </div>
     </div>
   );
 };
