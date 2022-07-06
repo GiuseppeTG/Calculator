@@ -12,9 +12,15 @@ describe('Test components', () => {
   });
 
   it('Home test', () => {
-    const tree = renderer
-      .create(<Home />)
-      .toJSON();
+    const tree = renderer.create(<Home />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('Navbar test', () => {
+    const tree = renderer.create(<Navbar />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('About test', () => {
+    const tree = renderer.create(<About />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
