@@ -1,5 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Calculator from '../components/calculator';
 import Home from '../components/Home';
 import Navbar from '../components/Navbar';
@@ -16,7 +17,11 @@ describe('Test components', () => {
     expect(tree).toMatchSnapshot();
   });
   it('Navbar test', () => {
-    const tree = renderer.create(<Navbar />).toJSON();
+    const tree = renderer.create(
+      <Router>
+        <Navbar />
+      </Router>,
+    ).toJSON();
     expect(tree).toMatchSnapshot();
   });
   it('About test', () => {
