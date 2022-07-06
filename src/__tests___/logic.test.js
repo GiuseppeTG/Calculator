@@ -7,7 +7,51 @@ describe('Testing calculate function', () => {
     const obj = {
       total: '-7',
       next: '9',
-      operation: '+',
+      operation: buttonName,
+    };
+    expect(calculate(obj, buttonName).total).toBe('2');
+    expect(calculate(obj, buttonName).next).toBeNull();
+    expect(calculate(obj, buttonName).operation).toBe(buttonName);
+  });
+  test('Additions', () => {
+    const buttonName = 'AC';
+    const obj = {
+      total: '-7',
+      next: '9',
+      operation: buttonName,
+    };
+    expect(calculate(obj, buttonName).total).toBeNull();
+    expect(calculate(obj, buttonName).next).toBeNull();
+    expect(calculate(obj, buttonName).operation).toBeNull();
+  });
+  test('Multiplication', () => {
+    const buttonName = 'x';
+    const obj = {
+      total: '2',
+      next: '4',
+      operation: buttonName,
+    };
+    expect(calculate(obj, buttonName).total).toBe('8');
+    expect(calculate(obj, buttonName).next).toBeNull();
+    expect(calculate(obj, buttonName).operation).toBe(buttonName);
+  });
+  test('Substraction', () => {
+    const buttonName = '-';
+    const obj = {
+      total: '10',
+      next: '9',
+      operation: buttonName,
+    };
+    expect(calculate(obj, buttonName).total).toBe('1');
+    expect(calculate(obj, buttonName).next).toBeNull();
+    expect(calculate(obj, buttonName).operation).toBe(buttonName);
+  });
+  test('Division', () => {
+    const buttonName = '÷';
+    const obj = {
+      total: '10',
+      next: '5',
+      operation: buttonName,
     };
     expect(calculate(obj, buttonName).total).toBe('2');
     expect(calculate(obj, buttonName).next).toBeNull();
@@ -16,7 +60,16 @@ describe('Testing calculate function', () => {
 });
 
 describe('Testing operate function', () => {
-  test('Plus', () => {
+  test('Addition', () => {
     expect(operate(1, 2, '+')).toBe('3');
+  });
+  test('Multiplication', () => {
+    expect(operate(1, 2, 'x')).toBe('2');
+  });
+  test('Substraction', () => {
+    expect(operate(1, 2, '-')).toBe('-1');
+  });
+  test('division', () => {
+    expect(operate(4, 2, '÷')).toBe('2');
   });
 });
