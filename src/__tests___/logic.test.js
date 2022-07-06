@@ -98,9 +98,7 @@ describe('Testing calculate function', () => {
   test('+/- tests', () => {
     const buttonName = '+/-';
     const obj = {
-
       next: '2',
-
     };
     expect(calculate(obj, buttonName).next).toBe('-2');
   });
