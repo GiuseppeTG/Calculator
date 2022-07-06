@@ -57,6 +57,53 @@ describe('Testing calculate function', () => {
     expect(calculate(obj, buttonName).next).toBeNull();
     expect(calculate(obj, buttonName).operation).toBe(buttonName);
   });
+  test('0 tests', () => {
+    const buttonName = '0';
+    const obj = {
+      total: '0',
+      next: '0',
+      operation: '+',
+    };
+    expect(calculate(obj, buttonName).total).toBeUndefined();
+    expect(calculate(obj, buttonName).next).toBeUndefined();
+    expect(calculate(obj, buttonName).operation).toBeUndefined();
+  });
+  test('0 tests', () => {
+    const buttonName = '3';
+    const obj = {
+      total: '2',
+      next: '0',
+    };
+    expect(calculate(obj, buttonName).next).toBe(buttonName);
+  });
+  test('. test', () => {
+    const buttonName = '.';
+    const obj = {
+      next: '2',
+      operation: '.',
+    };
+    expect(calculate(obj, buttonName).next).toBe('2.');
+  });
+  test('= tests', () => {
+    const buttonName = '=';
+    const obj = {
+      total: '3',
+      next: '2',
+      operation: '+',
+    };
+    expect(calculate(obj, buttonName).total).toBe('5');
+    expect(calculate(obj, buttonName).next).toBeNull();
+    expect(calculate(obj, buttonName).operation).toBeNull();
+  });
+  test('+/- tests', () => {
+    const buttonName = '+/-';
+    const obj = {
+
+      next: '2',
+
+    };
+    expect(calculate(obj, buttonName).next).toBe('-2');
+  });
 });
 
 describe('Testing operate function', () => {
