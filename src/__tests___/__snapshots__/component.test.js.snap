@@ -1,0 +1,349 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test components About test 1`] = `
+<div
+  className="about-section"
+>
+  <p
+    className="quote"
+  >
+    As far as the laws of mathematics refer to reality, they are not certain, and as far as they are certain, they do not refer to reality.
+  </p>
+  <p
+    className="author"
+  >
+    Richard Courant, German-American mathematician
+  </p>
+</div>
+`;
+
+exports[`Test components Calculator test 1`] = `
+<div
+  className="calculator-section"
+>
+  <h2>
+    Let's do some Math
+  </h2>
+  <div
+    className="calculator-grid"
+  >
+    <div
+      className="output"
+    >
+      0
+    </div>
+    <button
+      className="calc-btn 
+                                   
+                                  "
+      onClick={[Function]}
+      type="button"
+    >
+      AC
+    </button>
+    <button
+      className="calc-btn 
+                                   
+                                  "
+      onClick={[Function]}
+      type="button"
+    >
+      +/-
+    </button>
+    <button
+      className="calc-btn 
+                                   
+                                  "
+      onClick={[Function]}
+      type="button"
+    >
+      %
+    </button>
+    <button
+      className="calc-btn 
+                                   
+                                  operator"
+      onClick={[Function]}
+      type="button"
+    >
+      ÷
+    </button>
+    <button
+      className="calc-btn 
+                                   
+                                  "
+      onClick={[Function]}
+      type="button"
+    >
+      7
+    </button>
+    <button
+      className="calc-btn 
+                                   
+                                  "
+      onClick={[Function]}
+      type="button"
+    >
+      8
+    </button>
+    <button
+      className="calc-btn 
+                                   
+                                  "
+      onClick={[Function]}
+      type="button"
+    >
+      9
+    </button>
+    <button
+      className="calc-btn 
+                                   
+                                  operator"
+      onClick={[Function]}
+      type="button"
+    >
+      x
+    </button>
+    <button
+      className="calc-btn 
+                                   
+                                  "
+      onClick={[Function]}
+      type="button"
+    >
+      4
+    </button>
+    <button
+      className="calc-btn 
+                                   
+                                  "
+      onClick={[Function]}
+      type="button"
+    >
+      5
+    </button>
+    <button
+      className="calc-btn 
+                                   
+                                  "
+      onClick={[Function]}
+      type="button"
+    >
+      6
+    </button>
+    <button
+      className="calc-btn 
+                                   
+                                  operator"
+      onClick={[Function]}
+      type="button"
+    >
+      -
+    </button>
+    <button
+      className="calc-btn 
+                                   
+                                  "
+      onClick={[Function]}
+      type="button"
+    >
+      1
+    </button>
+    <button
+      className="calc-btn 
+                                   
+                                  "
+      onClick={[Function]}
+      type="button"
+    >
+      2
+    </button>
+    <button
+      className="calc-btn 
+                                   
+                                  "
+      onClick={[Function]}
+      type="button"
+    >
+      3
+    </button>
+    <button
+      className="calc-btn 
+                                   
+                                  operator"
+      onClick={[Function]}
+      type="button"
+    >
+      +
+    </button>
+    <button
+      className="calc-btn 
+                                  span-two 
+                                  "
+      onClick={[Function]}
+      type="button"
+    >
+      0
+    </button>
+    <button
+      className="calc-btn 
+                                   
+                                  "
+      onClick={[Function]}
+      type="button"
+    >
+      .
+    </button>
+    <button
+      className="calc-btn 
+                                   
+                                  operator"
+      onClick={[Function]}
+      type="button"
+    >
+      =
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Test components Home test 1`] = `
+<div
+  className="home-section"
+>
+  <h2
+    className="home-header"
+  >
+    Welcome to our page!
+  </h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam amet consequuntur possimus, nulla id praesentium porro voluptatum laboriosam rerum ullam ipsa. Iusto alias quas, distinctio iste voluptates assumenda exercitationem obcaecati.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam amet consequuntur possimus, nulla id praesentium porro voluptatum laboriosam rerum ullam ipsa. Iusto alias quas, distinctio iste voluptates assumenda exercitationem obcaecati.
+  </p>
+</div>
+`;
+
+exports[`Test components Navbar test 1`] = `
+<nav>
+  <div
+    className="logo"
+  >
+    <svg
+      className="icon"
+      fill="none"
+      height="1em"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+      viewBox="0 0 24 24"
+      width="1em"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <desc />
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+        stroke="none"
+      />
+      <line
+        x1="3"
+        x2="21"
+        y1="12"
+        y2="12"
+      />
+      <line
+        x1="12"
+        x2="12"
+        y1="3"
+        y2="21"
+      />
+      <line
+        x1="16.5"
+        x2="19.5"
+        y1="4.5"
+        y2="7.5"
+      />
+      <line
+        x1="19.5"
+        x2="16.5"
+        y1="4.5"
+        y2="7.5"
+      />
+      <line
+        x1="6"
+        x2="6"
+        y1="4"
+        y2="8"
+      />
+      <line
+        x1="4"
+        x2="8"
+        y1="6"
+        y2="6"
+      />
+      <line
+        x1="18"
+        x2="18.01"
+        y1="16"
+        y2="16"
+      />
+      <line
+        x1="18"
+        x2="18.01"
+        y1="20"
+        y2="20"
+      />
+      <line
+        x1="4"
+        x2="8"
+        y1="18"
+        y2="18"
+      />
+    </svg>
+    <p
+      className="logo-text"
+    >
+      Math Magician
+    </p>
+  </div>
+  <ul
+    className="links"
+  >
+    <li>
+      <a
+        className="link"
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        className="link"
+        href="/Calculator"
+        onClick={[Function]}
+      >
+        Calculator
+      </a>
+    </li>
+    <li>
+      <a
+        className="link"
+        href="/about"
+        onClick={[Function]}
+      >
+        About
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
