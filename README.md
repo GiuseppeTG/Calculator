@@ -15,7 +15,7 @@ Heroku:
 [Live Demo Link](https://giuseppe-math-magician.herokuapp.com/)
 
 Netlify:
-[Live Demo Link](https://62c70a72c75a7a0c4f41b7b9--resilient-lebkuchen-6e7352.netlify.app/Calculator)
+[Live Demo Link](https://resilient-lebkuchen-6e7352.netlify.app/)
 
 ## Getting Started
 
