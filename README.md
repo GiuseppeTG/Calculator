@@ -4,12 +4,18 @@
 
 > Build a functional calculator using React
 
-
 ## Built With
 
 - Major languages: HTML, CSS, JS
 - Frameworks: React, Jest
 - Technologies used: VSC, git, GitHub, Chrome, Webpack
+
+## Live Demo
+Heroku:
+[Live Demo Link](https://giuseppe-math-magician.herokuapp.com/)
+
+Netlify:
+[Live Demo Link](https://resilient-lebkuchen-6e7352.netlify.app/)
 
 ## Getting Started
 
